@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragdoll</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 30px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Hero section */
+        .hero {
+            margin-top: 60px;
+            background-image: url('https://www.dailypaws.com/thmb/_8RgBLMWn3NdEWf3B6TrOOKSjtg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/RAGDOLL-Profile-b5c6b37f280240438de1f28618862db2.png');
+            background-size: 600px;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        /* Main content */
+        section {
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .section p {
+            margin: 10px;
+            font-size: 14px;
+            color: black;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Purrfectionist</div>
+        <nav>
+            <a href="cat-breeds.html">Home</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Ragdoll</h1>
+    </div>
+
+    <main>
+        <section class="section">
+            <h2>Breed Overview</h2>
+            <style>
+                    table {
+                        width: 50%;
+                        border-collapse: collapse;
+                        margin: 20px auto;
+                    }
+                    th, td {
+                        border: 1px solid black;
+                        padding: 10px;
+                        text-align: left;
+                    }
+                    th {
+                        background-color: #f2f2f2;
+                    }
+                </style>
+            <table>
+              <tr>
+                <th>OFFICIAL NAME</th>
+                <td>Ragdoll</td>
+              </tr>
+
+              <tr>
+                <th>COMMAN NAME</th>
+                <td>Ragdoll</td>
+              </tr>
+
+              <tr>
+                <th>PET HEIGHT</th>
+                <td>9 to 11 inches</td>
+              </tr>
+              
+              <tr>
+                <th>PET WEIGHT</th>
+                <td>10 to 20 pounds</td>
+              </tr>
+              
+              <tr>
+                <th>LIFESPAN</th>
+                <td>13 to 18 years</td>
+              </tr>
+              
+              <tr>
+                <th>GOOD WITH</th>
+                <td>cats, children, dogs, families, seniors</td>
+              </tr>
+              
+              <tr>
+                <th>TEMPERAMENT</th>
+                <td>affectionate, bold, sociable</td>
+              </tr>
+              
+              <tr>
+                <th>INTELLIGENCE</th>
+                <td>high</td>
+              </tr>
+              
+              <tr>
+                <th>SHEDDING AMOUNT</th>
+                <td>occasional</td>
+              </tr>
+              
+              <tr>
+                <th>PLAYFULNESS</th>
+                <td>high</td>
+              </tr>
+              
+              <tr>
+                <th>ENERGY LEVEL</th>
+                <td>calm</td>
+              </tr>
+              
+              <tr>
+                <th>VOCAL LEVEL</th>
+                <td>quiet</td>
+              </tr>
+              
+              <tr>
+                <th>COAT LENGTH</th>
+                <td>long</td>
+              </tr>
+              
+              <tr>
+                <th>COLORS</th>
+                <td>black / ebony, blue / gray, chocolate / brown / sable, cream / beige / tan, lavender / silver, lilac, red / orange, white</td>
+              </tr>
+
+              <tr>
+                <th>PATTERNS</th>
+                <td>bi-color, color point</td>
+              </tr>
+              
+              <tr>
+                <th>OTHER TRAITS</th>
+                <td>easy to groom, easy to train, friendly toward humans, friendly toward other pets, friendly toward strangers, good for first-time pet owners, good lap cat, low prey drive, strong loyalty tendencies, tolerates being picked up</td>
+              </tr>
+            </table>
+            
+            <p>Ragdolls are <strong>large, lovable cats</strong> who are incredibly patient and gentle. Despite their imposing size, these cats are a calm and quiet breed who love nothing more than playing and cuddling with their pet parents.</p>
+            <p>This breed is typically easy to care for and incredibly social. They make great family pets and <strong>get along well with children</strong>. If you have the time and attention to give this fluffy kitty, she will reward you with endless loyalty and love.</p>
+            <p>Because ragdolls require careful breeding, they're less common than other breeds of cats. Ragdoll prices can vary from $400 for a kitten to as high as $2,000 for a show cat. The cost of your cat will depend on age and pedigree.</p>
+        </section>
+
+        <section class="section">
+            <h2>Appearance</h2>
+            <p>These beautiful cats are large and muscular <strong>with long hair</strong> and a soft, silky coat. Ragdolls are a low-shedding breed, but you may notice heavier seasonal shedding in the spring. The lack of an undercoat is to thank for this breed's lack of shedding, but they are not considered to be a <strong>"hypoallergenic" cat.</strong></p>
+            
+            <center>
+            <img src="https://www.dailypaws.com/thmb/DgjdohUnWiiAhxwDuo7IEVudIWc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/white-ragdoll-cat-sitting-1030358882-2000-0f1fecbdd71b4becb2f68c2c56f75b77.jpg" alt="Ragdoll">
+            </center>
+            <p>These cats stand between 9–11 inches tall and are usually 17–21 inches in length (excluding their fluffy tail). They weigh 10–20 pounds, with male ragdoll cats typically weighing more.</p>
+
+            <p>According to the Ragdoll Fanciers Club, there are five types of ragdoll coat patterns: colorpoint, bicolor, mitted, lynx point, and tortie point.</p>
+            <ul>
+                <li>Colorpoint coats are darker around the eyes, ears, tail, limbs, and (sometimes) stomach.</li>
+                <li>Bicolor ragdoll cats are similar in appearance to colorpoint ragdolls, but these cats will have an inverted-V coloring pattern on the face with a light belly and limb color.</li>
+                <li>Mitted ragdolls look like their colorpoint counterparts but have extra light spots near the paws, giving the appearance of mittens.</li>
+                <li>Lynx point ragdolls look like colorpoints but have tabby markings on their face.</li>
+                <li>Tortie points also look like colorpoints but incorporate red or cream mixed into other colors.</li>
+            </ul>
+            <p>Ragdoll colors include black, white, gray, blue, cream, lilac, chocolate, seal, and red. This breed is known to have blue eyes, but it is not an exclusive feature of the ragdoll.</p>
+        </section>
+
+        <section class="section">
+            <h2>Temperament</h2>
+            <p>This adorable breed is about as docile as cats come. The name "ragdoll" comes from their tendency to go limp when picked up. These cats love to be held and babied and will relax in your arms for as long as you'll let them.</p>
+            
+            <p>The ragdoll's personality is smart, gentle, and super affectionate. These kind kitties love and crave human attention, but they're rarely demanding. Ragdolls are extremely loyal and devoted to their people, making them wonderful companion pets.</p>
+
+            <p>But Kirsten Kranz, director of Specialty Purebred Cat Rescue, says that while these "gentle, floppy cats" are typically laid-back, every cat is an individual and it's important to do your due diligence before bringing home a kitten, no matter the breed.</p>
+            
+            <p>"It is exceptionally important that potential owners do their homework, get references, and interact with breeders' cats before taking the plunge," she says.</p>
+            <center>
+            <img src="https://www.dailypaws.com/thmb/l3DNyellbXWFDX2qJ8p6acXNAKE=/576x576/filters:no_upscale():max_bytes(150000):strip_icc():focal(888x397:890x399)/ragdoll-lying-on-wood-floor-417857939-2b15df56a4e9434b894fdee4df280588.jpg" alt="Ragdoll">
+            </center>
+            <p>When it comes to noise, you might not hear much from these quiet cats. Ragdolls don't tend to make a ton of noise unless something is bothering them. When they do speak up, they typically <strong>make small, sweet meows and meeps</strong> to let you know they're hungry or need some love.</p>
+            <p>Unlike most cats, your ragdoll might not get a kick out of conquering the highest points in the household. These kitties prefer to stay low to the ground—the CFA calls them "floor cats"—but are more than happy to jump up on a sofa or bed to lounge next to you.</p>
+        </section>
+
+        <section class="section">
+            <h2>Living Needs</h2>
+            <p>Ragdolls are generally easy to care for and a good fit for most families, kids, adults, and seniors, according to the Ragdoll Fanciers Club. This breed also <strong>gets along well with other pets.</strong> If you have the space to accommodate these big kitties, as well as tons of love to give them, they'll make a wonderful addition to your household.</p>
+            
+            <p>Your ragdoll can be left alone for short periods—say, a workday—but they'll miss you. These cats crave human attention and do best in households where one family member (or more) is usually present during the day. A ragdoll frequently left at home without her humans will surely get lonely. And when you do leave for just a few short hours, don't be surprised to come back and find your ragdoll patiently waiting at the door for you.</p>
+
+            <p>Keep a watchful eye on your super-social ragdoll. These cats have been bred to have <strong>trusting, friendly personalities</strong> and will approach anyone without much caution. If you take them outside, keep them close and on a harness.</p>
+            <center>
+            <img src="https://peticon.edu.vn/wp-content/uploads/2023/10/meo_ragdoll2.jpeg" alt="Ragdoll">
+            </center>
+            <p>Though ragdolls are docile, Kranz says, that doesn't mean they're lazy. These cats <strong>love to play</strong> and be part of family activities, so make sure to <strong>stock up on cat toys</strong>, scratching posts, and <strong>extra cardboard boxes</strong>. After a busy day, they're more than happy to relax in your arms or on your lap for lots of snuggles.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Care</h2>
+            <p>The ragdoll's grooming needs are relatively simple. These are very clean animals who take care of most of their own needs, but they might still require <strong>bathing every now and then</strong>. When you notice her coat looking greasy and stringy, it's time to put her in the tub.</p>
+            
+            <p>"<strong>Daily combing</strong> will keep a ragdoll in good shape," says Nicole Goudey-Rigger, owner and CEO of Pets a Go Go. "Starting early in a kitten's life helps and a dedicated amount of time daily is key to avoiding professional groomer visits."</p>
+            
+            <center>
+            <img src="https://www.dailypaws.com/thmb/5QuiZ6lcQYy1mva7jgTStu5oBeU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/cute-ragdoll-kitten-for-baby-1157717436-2000-75de84ead45a4cb495856b0fae5b4242.jpg" alt="Ragdoll">
+            </center>
+            
+            <p>Your ragdoll will also need other regular pet upkeep, including <strong>nail trimming</strong> and <strong>ear cleaning</strong>.</p>
+            
+            <p>Ragdolls are playful animals who will enjoy having toys left out for them. They're not super high climbers, so cat trees should be low to the ground. This breed of cat doesn't require a lot of extras in the way of exercise. You can expect them to spend a lot of time lying around, with short bursts of play and activity <strong>between frequent naps</strong>.</p>
+            
+            <p>Ragdolls are typically <strong>easy-to-train cats</strong>. They can learn to come when called, to retrieve toys, and <strong>other fun tricks</strong>. They're also usually quick to pick up on the basics, like using scratching posts and <strong>litter boxes</strong>. (Speaking of litter boxes—these big boys need big boxes to accommodate them and allow them to comfortably squat.) During training, these people-loving cats thrive with lots of positive reinforcement, snacks, and praise.</p>
+            
+            <center>
+            <img src="https://www.dailypaws.com/thmb/aj-NPjFANj2xnAoWTo7OsnDRs3g=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/ragdoll-being-pet-by-woman-292363149-2000-791f01a0e45e4abe9fb86014f027cd7f.jpg" alt="Ragdoll">
+            </center>
+            
+            <p>Socializing a ragdoll is easy because this trusting breed wants to be every human's best buddy. The hardest part is keeping a careful eye on these social butterflies, who can get themselves into danger (or lost, or stolen) trying to make friends.</p>
+            
+            <p>Feed your ragdoll high-quality cat food and monitor her to prevent overeating—these cats are <strong>prone to obesity</strong>. Check in with your vet to learn how much and how often to feed your individual cat.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Health</h2>
+            <p>Ragdoll cats have a lengthy lifespan of 13–18 years and are typically healthy pets.</p>
+            
+            <p>The ragdoll's greatest health risks include hypertrophic cardiomyopathy (HCM) and <strong>urinary tract issues</strong>. Reputable breeders will screen for health issues in your kitten, but it's important to have them screened regularly into adulthood. HCM and other health problems can go undetected until later in your cat's life.</p>
+            
+            <p>"Like all other purebreds, health issues can be more common, simply due to the smaller gene pool," Goudey-Rigger says. "Having a good relationship with an experienced cat vet is imperative since there is some increase in issues that can be at least postponed through diet and regular veterinary care."</p>
+        </section>
+        
+        <section class="section">
+            <h2>History</h2>
+            <p>A breeder named Ann Baker <strong>developed the ragdoll in the 1960s in Riverside, Calif</strong>. The ragdoll breeding process involved careful selection for gentle, non-aggressive traits. As time went on, Baker had increasingly eccentric ideas about the ragdoll breed—at one point, she even claimed the breed was the result of medically altered genetics, although that claim is unfounded. The ragdoll was recognized as a purebred cat in 1965..</p>
+                
+            <p>Breeders who were franchised under Baker eventually distanced themselves due to increasing strain with Baker. But they continued breeding the adorable, docile cats we know and love today.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ragdoll Profile. All rights reserved.</p>
+    </footer>
+</body>
+</html>

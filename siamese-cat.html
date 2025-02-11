@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siamese</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 30px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Hero section */
+        .hero {
+            margin-top: 60px;
+            background-image: url('https://www.dailypaws.com/thmb/NUvOPYuZPE1JXLsG8kgabmibs6s=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/SIAMESE-Profile-a5d2c5232eb6403db5640ae916ee8109.png');
+            background-size: 600px;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        /* Main content */
+        section {
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .section p {
+            margin: 10px;
+            font-size: 14px;
+            color: black;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Purrfectionist</div>
+        <nav>
+            <a href="cat-breeds.html">Home</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Siamese Cat</h1>
+    </div>
+
+    <main>
+        <section class="section">
+            <h2>Breed Overview</h2>
+            <style>
+                    table {
+                        width: 50%;
+                        border-collapse: collapse;
+                        margin: 20px auto;
+                    }
+                    th, td {
+                        border: 1px solid black;
+                        padding: 10px;
+                        text-align: left;
+                    }
+                    th {
+                        background-color: #f2f2f2;
+                    }
+                </style>
+            <table>
+              <tr>
+                <th>OFFICIAL NAME</th>
+                <td>Siamese</td>
+              </tr>
+
+              <tr>
+                <th>COMMAN NAME</th>
+                <td>Siamese</td>
+              </tr>
+
+              <tr>
+                <th>PET HEIGHT</th>
+                <td>8 to 10 inches</td>
+              </tr>
+              
+              <tr>
+                <th>PET WEIGHT</th>
+                <td>6 to 14 pounds</td>
+              </tr>
+              
+              <tr>
+                <th>LIFESPAN</th>
+                <td>15 to 20 years</td>
+              </tr>
+              
+              <tr>
+                <th>GOOD WITH</th>
+                <td>children, dogs, families, seniors</td>
+              </tr>
+              
+              <tr>
+                <th>TEMPERAMENT</th>
+                <td>affectionate, bold, neurotic, sociable</td>
+              </tr>
+              
+              <tr>
+                <th>INTELLIGENCE</th>
+                <td>high</td>
+              </tr>
+              
+              <tr>
+                <th>SHEDDING AMOUNT</th>
+                <td>infrequent</td>
+              </tr>
+              
+              <tr>
+                <th>PLAYFULNESS</th>
+                <td>high</td>
+              </tr>
+              
+              <tr>
+                <th>ENERGY LEVEL</th>
+                <td>active</td>
+              </tr>
+              
+              <tr>
+                <th>VOCAL LEVEL</th>
+                <td>howler</td>
+              </tr>
+              
+              <tr>
+                <th>COAT LENGTH</th>
+                <td>short</td>
+              </tr>
+              
+              <tr>
+                <th>COLORS</th>
+                <td>black / ebony, blue / gray, chocolate / brown / sable, cinnamon, cream / beige / tan, fawn, lavender / silver, lilac, white</td>
+              </tr>
+              
+              <tr>
+                <th>PATTERNS</th>
+                <td>color point</td>
+              </tr>
+              
+              <tr>
+                <th>OTHER TRAITS</th>
+                <td>easy to groom, easy to train, friendly toward humans, good for first-time pet owners, good lap cat, highly territorial, high potential for weight gain, hypoallergenic, strong loyalty tendencies, tolerates being picked up</td>
+              </tr>
+            </table>
+            
+            <p>The Siamese cat is a bright, intelligent feline with a handsome appearance and charming personality who can't help but draw admirers wherever he goes. These cats are known for being rather "dog-like," and love attention—human affection is one thing this breed can't get enough of.</p>
+            <p>Siamese kittens typically cost anywhere between $250–$1,000 and are a fairly popular breed. With their affectionate (and chatty!) personalities, it's easy to see why they're so beloved.</p>
+            <p>We spoke with a veterinarian for everything you need to know about Siamese temperament, living needs, care, and health concerns.</p>
+            <center>
+        </section>
+
+        <section class="section">
+            <h2>Appearance</h2>
+            <p>Siamese cats have a lean, lengthy frame with slim but muscular bodies. Their long, thin limbs and tails, coupled with a high-contrast colorpoint pattern, make the breed instantly recognizable. The colorpoint coats give the illusion of mystery, with darkened masquerade-like fur near the face, ears, legs, and tail.</p>
+            
+            <center>
+            <img src="https://www.dailypaws.com/thmb/vBtMjMAuqF47cyVsrNZZ-2RHUD0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/siamese-cat-couch_525025708-2000-e914b62ff65f4df39a7f55b87bf49213.jpg" alt="Siamese">
+            </center>
+            <p>Because of their genetics, this breed will always have <strong>piercing blue eyes</strong> (which can sometimes be a little cross-eyed) that adds to their striking, elegant appearance. And because of their short, light coat that doesn't shed much, Siamese cats <strong>can be a good fit for allergy sufferers.</strong></p>
+
+            <p>Though you might picture a Siamese as cream with dark colorpoints, there are actually four color combinations these kitties can be: seal point (the typical fawn or cream body with dark seal colorpoint), chocolate point (ivory body with dark brown colorpoint), blue point (light silver bodies to a dark, grayish-blue colorpoint), and lilac point (light cream bodies with a pinkish-gray colorpoint). They're all so beautiful, you might be tempted to adopt one of each!</p>
+        </section>
+
+        <section class="section">
+            <h2>Temperament</h2>
+            <p>The Siamese cat has a friendly, affectionate, outgoing, and social personality. This beautiful breed is also <strong>one of the most intelligent around.</strong> Loving and trusting with humans, the Siamese thrives with lots of positive human interaction. They're also deeply sensitive and will take any harsh words to heart. As with any pet, use positive reinforcement when <strong>training them to use the litter box</strong> or teaching them that your couch is not a scratching toy.</p>
+            
+            <p>Kirsten Kranz, director of <strong>Specialty Purebred Cat Rescue</strong>, says many Siamese are "Velcro kitties," whose love for their owners is so intense they'll often stick to their side, following them from room to room in pursuit of pets and snuggles.</p>
+
+            <p>Because they love their humans so much, it's a given these cats love to cuddle and be held. And although they need space to do their own thing at times, to a Siamese "doing your own thing" usually means hanging out a few feet away, rather than right on top of you.</p>
+            <p>Siamese cats also have a reputation as being conversationalists, <strong>meowing loudly to their owners.</strong> Though, as every cat is an individual, not every one is chatty. "Siamese can be very vocal, but it's not the majority of them," Kranz says. "Those that are will talk your ear off, [and are] maybe 25 percent of [the breed]. The rest are either moderately talkative, or not talkative at all."
+            <p>A Siamese might dub one member of the household "his person," and form a bond tighter with them than anyone else. A prime example of this: The relationship Patti Randall (played by Hayley Mills) has with D.C. the Siamese in Disney's 1965 movie <strong>That Darn Cat!</strong> But as long as everyone gives him lots of loving, this breed will cuddle up with any family member.</p>
+            <center>
+            <img src="https://m.media-amazon.com/images/I/71uU+g6Fg5L._AC_UF894,1000_QL80_.jpg" alt="That Darn Cat">
+            </center>
+        </section>
+
+        <section class="section">
+            <h2>Living Needs</h2>
+            <p>These cats, especially Siamese kittens, have a surprising amount of energy in such little furry bodies. "This is a breed that will need a lot of <strong>interaction and mental stimulation</strong> to be healthy," Kranz says. "These are not couch potato cats."</p>
+            
+            <p>The Siamese's exceptional intelligence means you'll need to shower them with affection so they don't feel neglected. Adopting a pair of Siamese cats, or bringing home a Siamese and another breed, will help them stay entertained—nobody can resist a 24/7 playmate!</p>
+
+            <p>But even if they have other feline friends to <strong>bat crinkly toys around</strong> with, these people-oriented pets can't handle being left to their own devices for long. The Siamese cat thrives in a home where people spend a lot of time, and going long periods without human interaction <strong>can leave these kitties depressed and anxious</strong>. If you leave your Siamese to his own devices a few hours too long, don't be surprised to come home and find vases knocked over and toilet paper rolls shredded.</p>
+
+            <p>"Siamese are very dog-like in that they crave interaction and play with their humans," says <strong>Nicole Goudey-Rigger</strong>, owner and CEO of Pets a Go Go in Stamford, Conn.</p>
+            
+            <p>Count on your Siamese to be a constant companion, sharing everything with you from sleeping arrangements to bathroom time. He'll be like a little, furry, vocal shadow, following you from room to room and asking "whatcha doing?" and "can I have a treat?"</p>
+            
+            <p>Along with their emotional sensitivity, this breed is also sensitive to some physical elements—<strong>especially to cold</strong>. Be sure to provide them lots of cuddles, warmth, and maybe even a little sweater if you live in a cold climate.
+            
+            <p>Kranz says Siamese cats—especially males, who tend to be more "dog-like"—make <strong>great family cats</strong>. "Most, <strong>when integrated slowly and carefully</strong> with other pets and respectful children, do very well," she says. "Each cat is an individual and should be treated as such."
+            <center>
+            <img src="https://www.dailypaws.com/thmb/Yu5OPZM2zXkhJX7j8byvmwHpbNg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/siamese-ball-129783445-2000-8fe8815de13841b7b803fb1703f28504.jpeg" alt="Siamese">
+            </center>
+        </section>
+        
+        <section class="section">
+            <h2>Care</h2>
+            <p>Because of their short, nonshedding coat, these cats don't need a ton of <strong>grooming</strong>. In fact, weekly combing, regular ear cleaning, and <strong>nail trimming</strong> are all a typical Siamese cat requires. But feel free to brush your kitty's coat just for fun—after all, he loves to be doted on.</p>
+            
+            <p>While he might be low-maintenance when it comes to grooming, you need to make sure you provide him with ample <strong>opportunity for play and movement</strong>. Stock up on interactive cat toys, cat trees, and other fun gifts. Pencil in daily play time as well.</p>
+            
+            <center>
+            <img src="https://cdn-aahmh.nitrocdn.com/mwIJloVUffDtKiCgRcivopdgojcJrVwT/assets/images/optimized/rev-31cad3f/www.cozycatfurniture.com/image/siamese-cat-cover.jpg" alt="Siamese">
+            </center>
+            
+            <p>Because of their bright minds, Siamese cats are easy to train. However, that doesn't necessarily mean they can be taught to do anything—with their intelligence comes a serious side of willfulness. They want to please you, but they prefer to do it their way when they want to.</p>
+            
+            <p>Feed your Siamese high-quality cat food and monitor food intake to help prevent obesity, which they are prone to. Check with your veterinarian to know how much and how often you should be feeding your cat.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Health</h2>
+            <p>Siamese cats are generally healthy pets and have an impressive lifespan of 15–20 years, and some even live past that.</p>
+                
+            <p>The Siamese cat's greatest health risks include <strong>amyloidosis </strong>(disease of the liver), asthma, dental disease (make sure to <strong>keep a close eye on your cat's teeth</strong>), and several kinds of cancer. Reputable Siamese breeders will screen for health issues in your kitten, but it's important to have them screened regularly into adulthood. Some health problems can go undetected until later in your cat's life.</p>
+            
+            <p>Take care of your Siamese cat's health and wellbeing by <strong>scheduling regular visits to the vet</strong>.
+
+            <center>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsM9wZoOfXooil9_oiL_-FEUkEXmUGyfEwAw&s" alt="Healthy Siamese">
+            </center>
+        </section>
+        
+        <section class="section">
+            <h2>History</h2>
+            <p>Siamese cats are considered one of the oldest existing Asian cat breeds, according to the <strong>National Siamese Cat Club</strong>. They originated in Thailand (formerly Siam) and were highly prized by royalty. When they were imported to England in the late 19th century, they took these "Royal Cats of Siam" took the country by storm, where they appeared in catalogues and were coveted by the wealthy.</p>
+                
+            <p>The Siamese has only continued to grow in popularity since then, and is consistently ranked as one of the most popular cat breeds in the U.S.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Siamese Profile. All rights reserved.</p>
+    </footer>
+</body>
+</html>

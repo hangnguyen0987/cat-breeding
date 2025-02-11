@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Breeds Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 30px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Hero section */
+        .hero {
+            margin-top: 60px;
+            background-image: url('https://gcs.tripi.vn/public-tripi/tripi-feed/img/474087PJG/hinh-anh-meo-den-black-cat-dep-nhat_020241668.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        /* Main content */
+        main {
+            padding: 20px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .category {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+        }
+
+        .category img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .category h2 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .category p {
+            margin: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .category a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 0 0 10px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .category a:hover {
+            background-color: #575757;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Purrfectionist</div>
+        <nav>
+            <a href="#">Home</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to Purrfectionist</h1>
+    </div>
+
+    <main>
+        <h2>Explore Our Cat Breeds</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="https://assets.petpal.asia/wp-content/uploads/2023/01/11150212/sergey-semin-ZjzXfBYxM_M-unsplash-1280x853.jpg" alt="Persian Cat">
+                <h2>Persian</h2>
+                <p>Known for their long, luxurious coat and calm personality.</p>
+                <a href="persian-cat.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://static.chotot.com/storage/chotot-kinhnghiem/c2c/2023/07/353a0250-giong-meo-maine-coon-3-1.jpg" alt="Maine Coon">
+                <h2>Maine Coon</h2>
+                <p>One of the largest cat breeds, friendly and intelligent.</p>
+                <a href="maine-coon.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.petcloud.com.au/d/wp-content/uploads/2024/06/03201611/Siamese-Cat.png" alt="Siamese Cat">
+                <h2>Siamese</h2>
+                <p>Famous for their striking blue eyes and vocal personality.</p>
+                <a href="siamese-cat.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://www.trupanion.com/images/trupanionwebsitelibraries/pet-blogs/bengal-cat-1-.jpg?sfvrsn=4f56903_6" alt="bengal-cat">
+                <h2>Bengal</h2>
+                <p>Playful and energetic with a stunning spotted coat.</p>
+                <a href="Bengal.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://peticon.edu.vn/wp-content/uploads/2023/10/meo-ragdoll-1.jpeg" alt="Ragdoll">
+                <h2>Ragdoll</h2>
+                <p>Best known for their affectionate and calm nature.</p>
+                <a href="Ragdoll.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.royalcanin-weshare-online.io/bucpAnsBaPOZra8qvbh8/v3/bp-lot-1-sphynx-color-human" alt="Sphynx">
+                <h2>Sphynx</h2>
+                <p>Famous for their lack of fur, sociable, lively and love attention.</p>
+                <a href="Sphynx.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://giuchomeo.com/wp-content/uploads/GettyImages-1319774380-c3da91f9259a47e0966007f8e10690ba.jpg" alt="british-shorthair">
+                <h2>British Shorthair</h2>
+                <p>Calm and easygoing, round faces and dense coats, perfect for a quiet home.</p>
+                <a href="British Shorthair.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://www.purina.in/sites/default/files/styles/ttt_image_510/public/2021-01/Abyssinian.1.jpg?itok=hMAcdi5d" alt="Abyssinian">
+                <h2>Abyssinian</h2>
+                <p>One of the oldest known cat breeds, well known for its active and playful.</p>
+                <a href="Abyssinian.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://pangovet.com/wp-content/uploads/2024/06/scottish-fold-munchkin-cat-lying-on-pillow_Kellee-Kovalsky-Shutterstock.jpeg" alt="Scottish Fold">
+                <h2>Scottish Fold</h2>
+                <p>Famous for folded ears, friendly and adaptable.</p>
+                <a href="scottish-fold.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://rawznaturalpetfood.com/wp-content/uploads/Norwegian-Forest-Cats.jpeg" alt="Norwegian Forest Cat">
+                <h2>Norwegian Forest Cat</h2>
+                <p>Independent and robust, thick coats, famous for adventurous personality.</p>
+                <a href="norwegian-forest-cat.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://felinefancy.co.uk/cdn/shop/articles/female-cat-names-49-109644.png?v=1734466032&width=1100" alt="Russian Blue">
+                <h2>Russian Blue</h2>
+                <p>Silvery coat and typical green eyes, gentle and reserved.</p>
+                <a href="russian-blue.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.shopify.com/s/files/1/0607/4063/2827/files/cat-2065595_1920.jpg" alt="Burmese">
+                <h2>Burmese</h2>
+                <p>Playful and compact, Burmese cats thrive in social environments.</p>
+                <a href="Burmese.html">Read More</a>
+            </div>
+            <div class="category">
+                <img src="https://thucanhviet.com/wp-content/uploads/2023/06/mmd.jpg" alt="Birman">
+                <h2>Birman</h2>
+                <p>Affectionate and gentle, Birmans are known for their silky coats and blue eyes.</p>
+                <a href="Birman.html">Read More</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cat Breeds. All rights reserved.</p>
+    </footer>
+</body>
+</html>
